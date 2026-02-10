@@ -1,0 +1,19 @@
+Instructions for Running the App Locally
+
+How to Run This Shiny App Locally
+
+1. Unzip the folder `FitnessPal-FitnessTracker.zip`.
+2. Open RStudio.
+3. Go to "File > Open Project" (or open RStudio in the folder).
+4. Open the file `app.R`.
+5. Install the required packages if you don’t already have them:
+  ```r
+  install.packages(c("shiny", "ggplot2", "dplyr", "DT", "shinyBS", "shinycssloaders", "lubridate"))
+  ```
+6. Run the app using the "Run App" button in RStudio "or":
+  ```r
+  shiny::runApp()
+  ```
+7. The app will open in your browser. Make sure `dataset_garmin_activity.csv` stays in the same folder as `app.R`.
+
+8. Make sure to use only the csv file provided in the zip file and also set it as working directory.
